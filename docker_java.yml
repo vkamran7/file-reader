@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: docker-pod
+spec:
+  containers:
+    - name: docker-container-file-reader
+      image: kamranvalizada/docker-demo-java
+      ports:
+        - containerPort: 6379
